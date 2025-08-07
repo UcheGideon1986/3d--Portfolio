@@ -4,22 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>3D Portfolio</title>
+  <title>My 3D Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <video autoplay muted loop id="bg-video">
-    <source src="media/bg-video.mp4" type="video/mp4" />
-  </video>
-
+  <canvas id="bgCanvas"></canvas>
+  <div class="content">
+    <h1>Hello, I'm Gideon</h1>
+    <p>This is my animated 3D shader background portfolio</p>
+  </div>
   <audio autoplay loop hidden>
     <source src="media/bg-music.mp3" type="audio/mp3" />
   </audio>
-
-  <div class="container">
-    <h1>Welcome to My 3D Portfolio</h1>
-    <canvas id="cubeCanvas"></canvas>
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

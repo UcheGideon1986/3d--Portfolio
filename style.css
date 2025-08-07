@@ -2,25 +2,23 @@
 body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
   overflow: hidden;
-  background: black;
-  color: white;
   font-family: Arial, sans-serif;
+  background: black;
 }
-#bg-video {
+#bgCanvas {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
-.container {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 2;
-}
-canvas {
-  display: block;
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  margin-top: 20vh;
 }
